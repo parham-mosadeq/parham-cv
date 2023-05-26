@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         {/* btn */}
         <div
-          onClick={handleMenu}
+          onClick={() => handleMenu()}
           className='text-mainWhite text-2xl cursor-pointer z-10 md:hidden'
         >
           {isOpen ? <HiMenu /> : <HiX />}
