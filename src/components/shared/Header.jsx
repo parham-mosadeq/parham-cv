@@ -22,6 +22,21 @@ const Header = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, autem.
         </p>
       </div>
+      <div className='flex items-center justify-around w-full p-3 text-mainWhite'>
+        <button
+          className='bg-mainDark px-7 py-3 rounded-full outline outline-mainBlue capitalize 
+        hover:outline-none hover:bg-mainBlue
+        '
+        >
+          download CV
+        </button>
+        <button
+          className='bg-mainDark px-7 py-3 rounded-full outline outline-mainGray capitalize 
+        hover:outline-none hover:bg-mainGray'
+        >
+          contact
+        </button>
+      </div>
     </article>
   );
 };
