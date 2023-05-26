@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { useRouter } from 'next/router';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
-
+  const { pathname } = useRouter();
   const handleMenu = () => setIsOpen((prev) => !prev);
   const navItems = ['about me', 'resume', 'blog', 'contact'];
 
   useEffect(() => {
     handleMenu();
-  }, [window.location]);
+  }, [pathname]);
 
   return (
     <header className='w-screen h-16 flex bg-mainDark relative'>
