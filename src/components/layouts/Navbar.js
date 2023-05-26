@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <header className='w-screen h-16 flex bg-mainDark relative'>
+    <header className='max-w-5xl md:px-5 mx-auto h-16 flex bg-mainDark relative'>
       <nav className='w-full flex items-center justify-between mx-auto max-w-7xl px-5 md:px-0'>
         {/* logo */}
         <div className='text-mainWhite'>
