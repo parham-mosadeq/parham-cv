@@ -1,8 +1,14 @@
-import Layout from '@/components/layout';
+import Layout from '@/components/layouts/layout';
 import React from 'react';
 
 const HomePage = () => {
-  return <Layout>home</Layout>;
+  return (
+    <Layout>
+      {/* header */}
+      
+      {/* header */}
+    </Layout>
+  );
 };
 
 export default HomePage;
