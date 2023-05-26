@@ -49,7 +49,7 @@ const Navbar = () => {
           {navItems.map((item) => {
             const joinedItems = item.replace(' ', '-');
             return (
-              <li className='my-16 tracking-wider capitalize hover:text-mainGray md:my-0 md:mx-2 lg:mx-5'>
+              <li key={item} className='my-16 tracking-wider capitalize hover:text-mainGray md:my-0 md:mx-2 lg:mx-5'>
                 <Link href={`/${joinedItems}`}>{item}</Link>
               </li>
             );

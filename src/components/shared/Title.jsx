@@ -6,12 +6,11 @@ const Title = ({ title }) => {
       {[title].map((i) => {
         const blueBorder = i.slice(0, 3);
         const res = i.slice(3);
-        console.log(res);
         return (
-          <h3>
+          <div key={i}>
             <span className='border-b-2 border-mainBlue'>{blueBorder}</span>
             <span className='border-b-2 border-mainGray'>{res}</span>
-          </h3>
+          </div>
         );
       })}
     </h2>
