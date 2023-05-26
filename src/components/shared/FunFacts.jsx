@@ -1,12 +1,13 @@
 import Title from './Title';
 import { HiHeart, HiClock } from 'react-icons/hi';
 import { FaCoffee, FaAward } from 'react-icons/fa';
+import Layout from '../layouts/layout';
 const FunFacts = () => {
   return (
-    <article className='w-full h-96'>
-      <Title title='fun facts' />
+    <Layout>
 
-      <div className='mt-10 capitalize text-mainWhite grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 text-center'>
+      <Title title='fun facts' />
+      <div className='py-10 capitalize text-mainWhite grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 text-center'>
         {/* clients */}
         <div className='flex flex-col items-center rounded-lg bg-secGray justify-center max-w-md mx-auto h-full my-3 p-4 border-2 w-3/4 border-mainGray shadow-sm hover:shadow-md hover:shadow-secGray'>
           <HiHeart className='text-mainBlue text-3xl ' />
@@ -36,7 +37,7 @@ const FunFacts = () => {
         </div>
         {/* Coffee Consumed */}
       </div>
-    </article>
+    </Layout>
   );
 };
 
