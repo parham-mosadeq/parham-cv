@@ -16,6 +16,10 @@ module.exports = {
         secBlue: '#0476DE',
         secGray: '#4F4F4F',
       },
+      // maybe will be used
+      backgroundImage: {
+        hero: "url('/ParhamMosadeqzadeh.jpg')",
+      },
     },
   },
   plugins: [],
