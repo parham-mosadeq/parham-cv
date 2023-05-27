@@ -29,14 +29,14 @@ const Header = () => {
         </div>
         <div className='flex items-center justify-center w-full p-3 text-mainWhite'>
           <button
-            className='bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainBlue capitalize 
+            className='transition duration-300 bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainBlue capitalize 
           hover:outline-none hover:bg-mainBlue
         '
           >
             download CV
           </button>
           <button
-            className='bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainGray capitalize 
+            className='transition duration-300 bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainGray capitalize 
           hover:outline-none hover:bg-mainGray'
           >
             contact
