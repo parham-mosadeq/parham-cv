@@ -10,7 +10,7 @@ const WhatIDo = () => {
     <Layout>
       <Title title='what i do' />
       <div className='md:flex md:items-center md:justify-between'>
-        <article className='px-3'>
+        <article className='md:px-3'>
           {/* copy write */}
           <div className={cardClasses}>
             <label className={labelClasses}>
@@ -39,7 +39,7 @@ const WhatIDo = () => {
           </div>
           {/* Web Design */}
         </article>
-        <article>
+        <article className='md:px-3'>
           {/* Ecommerce */}
           <div className={cardClasses}>
             <label className={labelClasses}>

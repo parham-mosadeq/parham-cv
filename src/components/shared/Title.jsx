@@ -1,20 +1,17 @@
+import { useMemo } from 'react';
 import React from 'react';
 
 const Title = ({ title }) => {
+  const [blueBorder, res] = useMemo(
+    () => [title.slice(0, 3), title.slice(3)],
+    [title]
+  );
   return (
-    <h2 className=' w-fit px-2 text-left text-2xl text-mainWhite capitalize'>
-      {[title].map((i) => {
-        const blueBorder = i.slice(0, 3);
-        const res = i.slice(3);
-        return (
-          <div key={i}>
-            <span className='border-b-2 border-mainBlue'>{blueBorder}</span>
-            <span className='border-b-2 border-mainGray'>{res}</span>
-          </div>
-        );
-      })}
+    <h2 className='w-fit md:pl-3 text-3xl text-mainWhite capitalize'>
+      <span className='border-b-2 border-mainBlue'>{blueBorder}</span>
+      <span className='border-b-2 border-mainGray'>{res}</span>
     </h2>
   );
 };
 
-export default Title;
+export default React.memo(Title);
