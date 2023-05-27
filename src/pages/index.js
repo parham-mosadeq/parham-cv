@@ -2,6 +2,7 @@ import Layout from '@/components/layouts/layout';
 import Clients from '@/components/shared/Clients';
 import FunFacts from '@/components/shared/FunFacts';
 import Header from '@/components/shared/Header';
+import Pricing from '@/components/shared/Pricing';
 import WhatIDo from '@/components/shared/WhatIDo';
 import React from 'react';
 
@@ -15,9 +16,11 @@ const HomePage = () => {
       <WhatIDo />
 
       {/* clients */}
-      <Clients />
+      {/* <Clients /> */}
       {/* fun facts */}
       <FunFacts />
+      {/* pricing */}
+      <Pricing />
     </Layout>
   );
 };
