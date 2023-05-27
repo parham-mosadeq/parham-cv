@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { useRouter } from 'next/router';
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useRouter();
-  const handleMenu = () => setIsOpen((prev) => !prev);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
   const navItems = ['about me', 'resume', 'blog', 'contact'];
 
   useEffect(() => {
-    handleMenu();
+    setIsOpen(false);
   }, [pathname]);
 
   return (
@@ -31,16 +31,16 @@ const Navbar = () => {
         {/* btn */}
         <div className='text-mainWhite text-2xl cursor-pointer z-10 md:hidden'>
           {isOpen ? (
-            <HiMenu onClick={() => handleMenu()} />
+            <HiX onClick={() => toggleMenu()} />
           ) : (
-            <HiX onClick={() => handleMenu()} />
+            <HiMenu onClick={() => toggleMenu()} />
           )}
         </div>
         {/* btn */}
         <ul
           className={`${
-            isOpen ? 'hidden' : 'absolute'
-          } text-mainWhite bg-mainDark h-screen w-1/2 capitalize absolute top-0 right-0 flex flex-col items-center justify-center
+            isOpen ? 'absolute' : 'hidden'
+          } text-mainWhite bg-mainDark h-screen w-1/2 capitalize top-0 right-0 flex flex-col items-center justify-center
           
           md:flex md:flex-row md:h-16 md:w-1/2 md:mx-auto
           `}
