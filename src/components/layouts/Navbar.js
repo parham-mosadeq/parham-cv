@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useRouter();
-  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const handleMenu = () => setIsOpen((prev) => !prev);
   const navItems = ['about me', 'resume', 'blog', 'contact'];
 
   useEffect(() => {
@@ -30,17 +30,17 @@ const Navbar = () => {
         </div>
         {/* btn */}
         <div className='text-mainWhite text-2xl cursor-pointer z-10 md:hidden'>
-          {isOpen ? (
-            <HiX onClick={() => toggleMenu()} />
+          {!isOpen ? (
+            <HiMenu onClick={() => handleMenu()} />
           ) : (
-            <HiMenu onClick={() => toggleMenu()} />
+            <HiX onClick={() => handleMenu()} />
           )}
         </div>
         {/* btn */}
         <ul
           className={`${
-            isOpen ? 'absolute' : 'hidden'
-          } text-mainWhite bg-mainDark h-screen w-1/2 capitalize top-0 right-0 flex flex-col items-center justify-center
+            !isOpen ? 'hidden' : 'absolute'
+          } text-mainWhite bg-mainDark h-screen w-1/2 capitalize absolute top-0 right-0 flex flex-col items-center justify-center
           
           md:flex md:flex-row md:h-16 md:w-1/2 md:mx-auto
           `}
@@ -50,7 +50,7 @@ const Navbar = () => {
             return (
               <li
                 key={item}
-                className='my-16 transition duration-300 hover:text-mainGray tracking-wider capitalize  md:my-0 md:mx-2 lg:mx-5'
+                className='my-16 transition duration-500 hover:text-mainGray tracking-wider capitalize  md:my-0 md:mx-2 lg:mx-5'
               >
                 <Link href={`/${joinedItems}`}>{item}</Link>
               </li>
