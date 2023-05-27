@@ -1,11 +1,10 @@
 import Layout from '@/components/layouts/layout';
 import Clients from '@/components/shared/Clients';
 import FunFacts from '@/components/shared/FunFacts';
-import Header from '@/components/shared/Header';
+import Profile from '@/components/shared/Profile';
 import Pricing from '@/components/shared/Pricing';
 import WhatIDo from '@/components/shared/WhatIDo';
 import Head from 'next/head';
-
 const HomePage = () => {
   return (
     <Layout>
@@ -13,8 +12,7 @@ const HomePage = () => {
         <title>Parham :)</title>
       </Head>
       {/* header */}
-      <Header />
-
+      <Profile />
       {/* what i do */}
       <WhatIDo />
 

@@ -1,16 +1,11 @@
-import Image from 'next/image';
-const Header = () => {
+import ProfilePic from './ProfilePic';
+
+const Profile = () => {
   return (
     <article className='flex w-full flex-col justify-center items-center md:flex-row h-fit md:p-10'>
       <div className='text-center w-1/2 mx-auto'>
         <div className='flex flex-col bg-secGray w-64 h-64 sm:w-full sm:h-full md:h-72 md:w-72 rounded-full p-5 mx-auto shadow-2xl'>
-          <Image
-            className='object-cover w-full h-full rounded-full block mx-auto m-0 shadow-lg'
-            src='/ParhamMosadeqzadeh.jpg'
-            width={350}
-            height={350}
-            alt='parham mosadeqzadeh'
-          />
+          <ProfilePic />
         </div>
         <p className='text-mainGray capitalize my-3 text-sm shadow-sm'>
           front-end developer
@@ -47,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Profile;
