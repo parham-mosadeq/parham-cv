@@ -4,11 +4,14 @@ import FunFacts from '@/components/shared/FunFacts';
 import Header from '@/components/shared/Header';
 import Pricing from '@/components/shared/Pricing';
 import WhatIDo from '@/components/shared/WhatIDo';
-import React from 'react';
+import Head from 'next/head';
 
 const HomePage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Parham :)</title>
+      </Head>
       {/* header */}
       <Header />
 
