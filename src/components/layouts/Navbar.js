@@ -43,13 +43,15 @@ const Navbar = () => {
           } text-mainWhite bg-mainDark h-screen w-1/2 capitalize absolute top-0 right-0 flex flex-col items-center justify-center
           
           md:flex md:flex-row md:h-16 md:w-1/2 md:mx-auto
-          
           `}
         >
           {navItems.map((item) => {
             const joinedItems = item.replace(' ', '-');
             return (
-              <li key={item} className='my-16 tracking-wider capitalize hover:text-mainGray md:my-0 md:mx-2 lg:mx-5'>
+              <li
+                key={item}
+                className='my-16 transition duration-300 hover:text-mainGray tracking-wider capitalize  md:my-0 md:mx-2 lg:mx-5'
+              >
                 <Link href={`/${joinedItems}`}>{item}</Link>
               </li>
             );
