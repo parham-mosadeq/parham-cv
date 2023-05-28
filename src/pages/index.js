@@ -5,12 +5,8 @@ import Header from '@/components/shared/Header';
 import Pricing from '@/components/shared/Pricing';
 import WhatIDo from '@/components/shared/WhatIDo';
 import Head from 'next/head';
-import { useEffect } from 'react';
-import { useScroll } from 'react-spring';
 
 const HomePage = () => {
-  const height = useScroll();
-  console.log(height);
   return (
     <Layout>
       <Head>
