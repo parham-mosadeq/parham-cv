@@ -6,7 +6,7 @@ const ProfilePic = () => {
     loop: false,
     from: { opacity: 0 },
     to: { opacity: 1 },
-    config: { duration: '600' },
+    config: { duration: '1200' },
   });
 
   return (
