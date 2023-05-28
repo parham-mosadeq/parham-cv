@@ -4,7 +4,7 @@ import Layout from './layout';
 const Footer = () => {
   const currentYear = new Date().getFullYear().toString();
   const sharedClasses = `flex items-center justify-center`;
-  const linkClasses=`hover:text-mainGray transition duration-500`
+  const linkClasses = `hover:text-mainGray transition duration-500`;
   return (
     <Layout>
       <footer
@@ -18,11 +18,13 @@ const Footer = () => {
           </span>
         </h2>
         {/* socials */}
-        <div className={`${sharedClasses} flex-row gap-3 my-4`}>
+        <div
+          className={`${sharedClasses} flex-row gap-3 my-4 capitalize font-light tracking-wider`}
+        >
           <a className={linkClasses} href='/' target='_blank'>
             linkedin
           </a>
-          <a className={linkClasses} href='/' target='_blank'>
+          <a className={linkClasses} href='https://github.com/parham-mosadeq' target='_blank'>
             github
           </a>
         </div>
