@@ -15,6 +15,7 @@ module.exports = {
         mainShadow: '#F1F1F1',
         secBlue: '#0476DE',
         secGray: '#4F4F4F',
+        thiGray: '#252525',
       },
       // maybe will be used
       backgroundImage: {
