@@ -24,6 +24,7 @@ const ProfilePic = () => {
           width={350}
           height={350}
           alt='parham mosadeqzadeh'
+          priority={true}
         />
       </animated.div>
     </>
