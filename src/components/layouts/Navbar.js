@@ -52,7 +52,11 @@ const Navbar = () => {
                 key={item}
                 className='my-16 transition duration-500 hover:text-mainGray tracking-wider capitalize  md:my-0 md:mx-2 lg:mx-5'
               >
-                <Link href={`/${joinedItems}`}>{item}</Link>
+                <Link
+                  href={`/${joinedItems === 'about-me' ? '' : joinedItems}`}
+                >
+                  {item}
+                </Link>
               </li>
             );
           })}
