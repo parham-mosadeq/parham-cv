@@ -1,4 +1,5 @@
 import Layout from '@/components/layouts/layout';
+import PageTitle from '@/components/shared/PageTitle';
 import Title from '@/components/shared/Title';
 import Head from 'next/head';
 import React from 'react';
@@ -13,10 +14,7 @@ const index = () => {
       <Head>
         <title>Resume</title>
       </Head>
-      <div className='w-full rounded-md border-t  border-b border-thiGray bg-thiGray capitalize p-10'>
-        <h1 className='text-mainWhite text-3xl font-bold'>resume</h1>
-        <p className='text-mainGray font-light'>2+ years of Experience</p>
-      </div>
+      <PageTitle title='resume' sub='2+ years of Experience' />
       <article className='flex flex-col items-center justify-center md:flex-row'>
         <div className='py-10 '>
           <Title title='Education' />
