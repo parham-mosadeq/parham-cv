@@ -1,5 +1,4 @@
 import ProfilePic from './ProfilePic';
-
 const Profile = () => {
   return (
     <article className='flex w-full flex-col justify-center items-center md:flex-row h-fit md:p-10'>
@@ -7,9 +6,12 @@ const Profile = () => {
         <div className='flex flex-col bg-secGray w-64 h-64 sm:w-full sm:h-full md:h-72 md:w-72 rounded-full p-5 mx-auto shadow-2xl'>
           <ProfilePic />
         </div>
-        <p className='text-mainGray capitalize my-3 text-sm shadow-sm'>
+        <p className='text-mainGray capitalize mt-3 text-sm font-bold shadow-sm'>
           front-end developer
         </p>
+          <p className='text-mainGray capitalize shadow-sm block text-lg font-light'>
+          UI/UX designer
+          </p>
       </div>
       {/* info */}
       <div className='w-full mx-auto text-center'>
