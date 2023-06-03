@@ -15,7 +15,7 @@ const index = () => {
         <title>Resume</title>
       </Head>
       <PageTitle title='resume' sub='2+ years of Experience' />
-      <article className='flex flex-col items-center justify-center md:flex-row'>
+      <article className='flex flex-col items-center justify-center'>
         <div className='py-10 '>
           <Title title='Education' />
           {/* education */}

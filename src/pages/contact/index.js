@@ -16,10 +16,9 @@ const ContactPage = () => {
       <PageTitle title='contact' sub="let's get in touch" />
 
       <article
-        className={`grid md:grid-cols-2 items-center content-center w-full h-full py-10`}
+        className={`h-full w-full`}
       >
-        {/* phone */}
-        <div className='max-h-44 flex items-center justify-center h-full w-full px-3 py-4'>
+        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
           <HiOutlineDeviceMobile className='text-4xl text-mainBlue mr-4' />
           <div>
             <p className='text-lg text-mainGray'>09212342871</p>
@@ -29,7 +28,7 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div className='max-h-44 flex items-center justify-center h-full min-w-full px-3 py-4'>
+        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
           <HiOutlineLocationMarker className='text-4xl w-fit text-mainBlue mr-4' />
           <div>
             <p className='text-lg text-mainGray'>Shiraz,Iran</p>
@@ -39,7 +38,7 @@ const ContactPage = () => {
           </div>
         </div>
         {/* current loc */}
-        <div className='max-h-44 flex items-center justify-center h-full w-full px-3 py-4'>
+        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
           <HiOutlineMail className='text-4xl text-mainBlue mr-4' />
           <div>
             <a
@@ -50,11 +49,26 @@ const ContactPage = () => {
               pmosadeqzadeh@gmail.com
             </a>
             <p className='text-lg text-mainGray capitalize'>
-              will get back to you as soon as possible ;)
+             i will get back to you as soon as possible ;)
             </p>
           </div>
         </div>
       </article>
+
+      <form action="#">
+        <div>
+<label htmlFor="name">name</label>
+        <input type="name" name='name' requaired/>
+        </div>
+        <div>
+<label htmlFor="email">email</label>
+        <input type="email" name='email' requaired/>
+        </div>
+        <div>
+<label htmlFor="msg">message</label>
+        <input type="text" name='msg' requaired/>
+        </div>
+      </form>
     </Layout>
   );
 };
