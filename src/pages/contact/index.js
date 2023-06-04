@@ -16,29 +16,19 @@ const ContactPage = () => {
       <PageTitle title='contact' sub="let's get in touch" />
 
       <article
-        className={`h-full w-full`}
+        className={`h-full w-full flex flex-col items-start justify-start pl-4 lg:grid lg:grid-cols-2`}
       >
-        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
+        <div className='flex flex-col items-start justify-start pl-4'>
+
+        <div className='flex items-center justify-between py-7 my-4'>
           <HiOutlineDeviceMobile className='text-4xl text-mainBlue mr-4' />
           <div>
-            <p className='text-lg text-mainGray'>09212342871</p>
-            <p className='text-lg text-mainGray capitalize'>
-              message me on whatsapp or telegram
-            </p>
+            <p className='text-lg text-mainGray'><span className='block capitalize text-mainGray tracking-wider '>09212342871</span>Whatssapp/Telegram Me </p>
           </div>
         </div>
 
-        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
-          <HiOutlineLocationMarker className='text-4xl w-fit text-mainBlue mr-4' />
-          <div>
-            <p className='text-lg text-mainGray'>Shiraz,Iran</p>
-            <p className='text-lg text-mainGray capitalize'>
-              not limited to any location!
-            </p>
-          </div>
-        </div>
-        {/* current loc */}
-        <div className='max-h-44 flex items-center justify-center h-full max-w-xl mx-auto px-3 py-4'>
+
+<div className='flex items-center justify-between py-7 my-4 '>
           <HiOutlineMail className='text-4xl text-mainBlue mr-4' />
           <div>
             <a
@@ -48,27 +38,50 @@ const ContactPage = () => {
             >
               pmosadeqzadeh@gmail.com
             </a>
-            <p className='text-lg text-mainGray capitalize'>
-             i will get back to you as soon as possible ;)
-            </p>
+            <p
+            className=' text-mainGray capitalize'
+
+            >
+mail me your business inquiries            </p>
           </div>
         </div>
+
+        <div className='flex items-center justify-between py-7 my-4'>
+          <HiOutlineLocationMarker className='text-4xl w-fit text-mainBlue mr-4' />
+          <div>
+            <p className='text-lg text-mainGray'>Shiraz,Iran</p>
+            <p className="capitalize text-mainGray">not limited to locations</p>
+          </div>
+        </div>
+        {/* current loc */}
+        </div>
+
+        <form action="#" className='w-full border-t lg:px-3 lg:border-none border-mainBlue h-full py-10 flex flex-col items-center justify-center'>
+          {/* name */}
+        <div className='lg:h-full lg:w-full lg:mx-auto '>
+        <label className='block capitalize text-mainGray tracking-wider ' htmlFor="name">name</label>
+        <input type="name" name='name' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        </div>
+          {/* name */}
+          {/* email */}
+        <div  className='lg:h-full lg:w-full lg:mx-auto '> 
+        <label className='block capitalize text-mainGray tracking-wider ' htmlFor="email">email</label>
+        <input type="email" name='email' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        </div>
+          {/* email */}
+          {/* text */}
+        <div className='lg:h-full lg:w-full lg:mx-auto '>
+        <label className='block capitalize text-mainGray tracking-wider ' htmlFor="msg">message</label>
+        <input type="text" name='msg' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        </div>
+          {/* text */}
+
+<button type='submit' className='lg:w-full my-6 capitalize text-mainWhite border-2 bg-secGray border-mainBlue transition-colors duration-500 hover:bg-mainBlue hover:border-secGray px-8 py-2 rounded-lg '>send</button>
+
+      </form>
       </article>
 
-      <form action="#">
-        <div>
-<label htmlFor="name">name</label>
-        <input type="name" name='name' requaired/>
-        </div>
-        <div>
-<label htmlFor="email">email</label>
-        <input type="email" name='email' requaired/>
-        </div>
-        <div>
-<label htmlFor="msg">message</label>
-        <input type="text" name='msg' requaired/>
-        </div>
-      </form>
+      
     </Layout>
   );
 };
