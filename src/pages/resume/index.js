@@ -9,18 +9,19 @@ const index = () => {
   const cardClasses = `capitalize pt-10  py-10 px-3 max-h-36`;
   const cartTitleClasses = `text-lg text-mainWhite`;
   const cartParClasses = `font-light text-mainGray max-w-md max-h-full`;
+  const cardItemClasses=`transition duration-300 hover:scale-105 bg-mainDark rounded-md`
   return (
     <Layout>
       <Head>
         <title>Resume</title>
       </Head>
       <PageTitle title='resume' sub='2+ years of Experience' />
-      <article className='flex flex-col items-center justify-center'>
-        <div className='py-10 '>
+      <article className=''>
+        <div className='py-10 shadow-lg '>
           <Title title='Education' />
           {/* education */}
           <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardClasses} `}>
+            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
               <h3 className={cartTitleClasses}>computer science</h3>
               <p className={cartParClasses}>
                 As a computer science student, there is never a dull moment! 3
@@ -28,10 +29,8 @@ const index = () => {
               </p>
             </div>
           </div>
-          {/* education */}
-          {/* education */}
           <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardClasses} `}>
+            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
               <h3 className={cartTitleClasses}>copy writing</h3>
               <p className={cartParClasses}>
                 7 months of self studying how to become (be better actually) at
@@ -39,14 +38,14 @@ const index = () => {
               </p>
             </div>
           </div>
-          {/* education */}
         </div>
+          {/* education */}
 
-        <div className=' '>
+        <div className=' shadow-lg bg-mainDark '>
           <Title title='Experience' />
           {/* Experience */}
           <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardClasses} `}>
+            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
               <h3 className={cartTitleClasses}>web administrator</h3>
               <p className={cartParClasses}>
                 2+ years working as royagsht travel agency's web administrator
@@ -57,7 +56,7 @@ const index = () => {
           {/* Experience */}
           {/* Experience */}
           <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardClasses} `}>
+            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
               <h3 className={cartTitleClasses}>front-end developer</h3>
               <p className={cartParClasses}>
                 1+ year freelancing as a front-end developer (react & next-js)
