@@ -4,7 +4,7 @@ import Layout from '../layouts/layout';
 
 const Pricing = () => {
   const centerClasses = `flex flex-col items-center justify-center`;
-  const cardClasses = `h-64 border-2 border-mainBlue rounded-lg w-full my-10 hover:shadow-md hover: hover:shadow-mainShadow transition duration-300`;
+  const cardClasses = `h-64 border-2 border-mainBlue rounded-lg w-full my-10 hover:shadow-md hover: hover:shadow-secGray transition duration-300`;
   const cardTitle = `py-4 text-secGray`;
   const btnClasses = `px-10 py-2 my-4 uppercase text-mainDark tracking-wide bg-mainBlue rounded-full transition duration-500 hover:bg-secBlue hover:text-mainWhite`;
   const priceClasses = `text-3xl font-bold text-mainGray`;

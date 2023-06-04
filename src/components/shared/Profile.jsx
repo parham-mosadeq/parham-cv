@@ -1,4 +1,5 @@
 import ProfilePic from './ProfilePic';
+import Link from 'next/link'
 const Profile = () => {
   return (
     <article className='flex w-full flex-col justify-center items-center md:flex-row h-fit md:p-10'>
@@ -32,12 +33,13 @@ const Profile = () => {
           >
             download CV
           </button>
-          <button
+          <Link
+          href='/contact'
             className='transition duration-300 bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainGray capitalize 
           hover:outline-none hover:bg-mainGray'
           >
             contact
-          </button>
+          </Link>
         </div>
       </div>
     </article>
