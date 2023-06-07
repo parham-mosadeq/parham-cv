@@ -24,7 +24,7 @@ const Pricing = () => {
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
             <p> only 1 page 3-5 sections</p>
-            <p>30 days support</p>
+            <p>15 days support</p>
             <p>20$ per new page</p>
           </div>
         </div>
@@ -42,7 +42,7 @@ const Pricing = () => {
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
             <p>maximum 5 pages 3-5 sections</p>
-            <p>60 days support</p>
+            <p>30 days support</p>
             <p>20$ per new page</p>
           </div>
         </div>
@@ -59,7 +59,7 @@ const Pricing = () => {
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
             <p> minimum 5 pages 3-5+ sections</p>
-            <p>90 days support</p>
+            <p>45 days support</p>
             <p>17$ per new page</p>
           </div>
         </div>
