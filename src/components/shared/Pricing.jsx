@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from './Title';
 import Layout from '../layouts/layout';
-
+import Link from 'next/link'
 const Pricing = () => {
   const centerClasses = `flex flex-col items-center justify-center`;
   const cardClasses = `h-64 border-2 border-mainBlue rounded-lg w-full my-10 hover:shadow-md hover: hover:shadow-secGray transition duration-300`;
   const cardTitle = `py-4 text-secGray`;
-  const btnClasses = `px-10 py-2 my-4 uppercase text-mainDark tracking-wide bg-mainBlue rounded-full transition duration-500 hover:bg-secBlue hover:text-mainWhite`;
+  const btnClasses = `px-10 block py-2 my-4 uppercase text-mainDark tracking-wide bg-mainBlue rounded-full transition duration-500 hover:bg-secBlue hover:text-mainWhite`;
   const priceClasses = `text-3xl font-bold text-mainGray`;
   return (
     <Layout>
@@ -18,8 +18,8 @@ const Pricing = () => {
           <h5 className={cardTitle}>sliver</h5>
           {/* price */}
           <div className={centerClasses}>
-            <h3 className={priceClasses}>70$</h3>
-            <button className={btnClasses}>select</button>
+            <h3 className={priceClasses}>90$</h3>
+             <Link className={btnClasses} href={`/order/silver`}>select</Link>
           </div>
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
@@ -37,7 +37,7 @@ const Pricing = () => {
           {/* price */}
           <div className={centerClasses}>
             <h3 className={priceClasses}>190$</h3>
-            <button className={btnClasses}>select</button>
+              <Link className={btnClasses} href={`/order/gold`}>select</Link> 
           </div>
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
@@ -54,7 +54,7 @@ const Pricing = () => {
           {/* price */}
           <div className={centerClasses}>
             <h3 className={priceClasses}>300$</h3>
-            <button className={btnClasses}>select</button>
+             <Link className={btnClasses} href={`/order/platinum`}>select</Link> 
           </div>
           {/* info */}
           <div className={`${centerClasses} text-mainWhite capitalize`}>
