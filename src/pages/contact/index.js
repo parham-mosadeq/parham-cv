@@ -56,23 +56,23 @@ mail me your business inquiries            </p>
         {/* current loc */}
         </div>
 
-        <form action="#" className='w-full border-t lg:px-3 lg:border-none border-mainBlue h-full py-10 flex flex-col items-center justify-center'>
+        <form action="#" className=' w-full border-t lg:px-3 lg:border-none border-mainBlue h-full py-10 flex flex-col items-center justify-center'>
           {/* name */}
-        <div className='lg:h-full lg:w-full lg:mx-auto '>
+        <div className='lg:h-full w-full lg:w-full lg:mx-auto '>
         <label className='block capitalize text-mainGray tracking-wider ' htmlFor="name">name</label>
-        <input type="name" name='name' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        <input type="name" name='name' className=' w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
         </div>
           {/* name */}
           {/* email */}
-        <div  className='lg:h-full lg:w-full lg:mx-auto '> 
+        <div  className='lg:h-full w-full lg:mx-auto '> 
         <label className='block capitalize text-mainGray tracking-wider ' htmlFor="email">email</label>
-        <input type="email" name='email' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        <input type="email" name='email' className=' w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
         </div>
           {/* email */}
           {/* text */}
-        <div className='lg:h-full lg:w-full lg:mx-auto '>
+        <div className='lg:h-full w-full lg:mx-auto '>
         <label className='block capitalize text-mainGray tracking-wider ' htmlFor="msg">message</label>
-        <input type="text" name='msg' className='lg:w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
+        <input type="text" name='msg' className='w-full h-5 lg:h-6 rounded-md  bg-mainDark border-2 border-mainBlue text-mainWhite focus:outline-none focus:h-7 focus:border-secGray hover:outline-none' required/>
         </div>
           {/* text */}
 
