@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useRouter();
   const handleMenu = () => setIsOpen((prev) => !prev);
-  const navItems = ['about me', 'resume', 'blog', 'contact'];
+  const navItems = ['about me', 'resume','work','blog', 'contact'];
 
   useEffect(() => {
     setIsOpen(false);
