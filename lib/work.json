@@ -1,0 +1,9 @@
+[
+  {
+    "name": "foodis",
+    "link": "https://",
+    "description": "",
+    "img": "/images/foodis",
+    "techs": ["materialUI", "redux", "react", "restAPI"]
+  }
+]
