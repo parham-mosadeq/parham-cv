@@ -16,12 +16,14 @@ const index = () => {
         <title>Resume</title>
       </Head>
       <PageTitle title='resume' sub='2+ years of Experience' />
-      <article className=''>
+      <article className=' md:overflow-x-hidden lg:overflow-x-visible'>
         <div className='py-10 shadow-lg '>
           <Title title='Education' />
           {/* education */}
-          <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
+          <div className={`h-fit md:px-7 lg:px-0 `}>
+            <div
+              className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}
+            >
               <h3 className={cartTitleClasses}>computer science</h3>
               <p className={cartParClasses}>
                 As a computer science student, there is never a dull moment! 3
@@ -29,8 +31,10 @@ const index = () => {
               </p>
             </div>
           </div>
-          <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
+          <div className={`h-fit md:px-7 lg:px-0 `}>
+            <div
+              className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}
+            >
               <h3 className={cartTitleClasses}>copy writing</h3>
               <p className={cartParClasses}>
                 7 months of self studying how to become (be better actually) at
@@ -39,13 +43,15 @@ const index = () => {
             </div>
           </div>
         </div>
-          {/* education */}
+        {/* education */}
 
         <div className=' shadow-lg bg-mainDark '>
           <Title title='Experience' />
           {/* Experience */}
-          <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
+          <div className={`h-fit md:px-7 lg:px-0 `}>
+            <div
+              className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}
+            >
               <h3 className={cartTitleClasses}>web administrator</h3>
               <p className={cartParClasses}>
                 2+ years working as royagsht travel agency's web administrator
@@ -55,8 +61,10 @@ const index = () => {
           </div>
           {/* Experience */}
           {/* Experience */}
-          <div className={`h-fit `}>
-            <div className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}>
+          <div className={`h-fit md:px-7 lg:px-0 `}>
+            <div
+              className={`${borderClasses} ${cardItemClasses} ${cardClasses} `}
+            >
               <h3 className={cartTitleClasses}>front-end developer</h3>
               <p className={cartParClasses}>
                 1+ year freelancing as a front-end developer (react & next-js)
