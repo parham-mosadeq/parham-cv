@@ -1,5 +1,5 @@
 import ProfilePic from './ProfilePic';
-import Link from 'next/link'
+import Link from 'next/link';
 const Profile = () => {
   return (
     <article className='flex w-full flex-col justify-center items-center md:flex-row h-fit md:p-10'>
@@ -10,9 +10,9 @@ const Profile = () => {
         <p className='text-mainGray capitalize mt-3 text-sm font-bold shadow-sm'>
           front-end developer
         </p>
-          <p className='text-mainGray capitalize shadow-sm block text-lg font-light'>
+        <p className='text-mainGray capitalize shadow-sm block text-lg font-light'>
           UI/UX designer
-          </p>
+        </p>
       </div>
       {/* info */}
       <div className='w-full mx-auto text-center'>
@@ -34,7 +34,7 @@ const Profile = () => {
             download CV
           </button>
           <Link
-          href='/contact'
+            href='/contact'
             className='transition duration-300 bg-mainDark px-7 py-3 mx-2 rounded-full outline outline-mainGray capitalize 
           hover:outline-none hover:bg-mainGray'
           >

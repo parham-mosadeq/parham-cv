@@ -1,8 +1,8 @@
 import Layout from '@/components/layouts/layout';
-import Clients from '@/components/shared/Clients';
+// import Clients from '@/components/shared/Clients';
 import FunFacts from '@/components/shared/FunFacts';
 import Profile from '@/components/shared/Profile';
-import Pricing from '@/components/shared/Pricing';
+// import Pricing from '@/components/shared/Pricing';
 import WhatIDo from '@/components/shared/WhatIDo';
 import Head from 'next/head';
 const HomePage = () => {
@@ -17,11 +17,13 @@ const HomePage = () => {
       <WhatIDo />
 
       {/* clients */}
+      {/* removed clients */}
       {/* <Clients /> */}
       {/* fun facts */}
       <FunFacts />
       {/* pricing */}
-      <Pricing />
+      {/* removed pricing*/}
+      {/* <Pricing /> */}
     </Layout>
   );
 };
